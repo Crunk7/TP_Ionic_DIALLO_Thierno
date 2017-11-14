@@ -42,6 +42,11 @@ export class HomePage {
 
     });
   }
+  savePicture(){
+    if((this.base64Image).length){
+      this.base64Image.base64ToGallery(this.base64Image, { prefix: '_img' });
+    }
+  }
 
 }
 
