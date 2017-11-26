@@ -23,12 +23,23 @@
     "@ionic-native/base64-to-gallery": "^4.3.2",
     "@ionic-native/camera": "^4.3.2",
     "@ionic-native/core": "4.3.2",
+    "@ionic-native/geolocation": "^4.4.0",
+    "@ionic-native/google-maps": "^4.4.0",
     "@ionic-native/splash-screen": "4.3.2",
     "@ionic-native/status-bar": "4.3.2",
     "@ionic/storage": "2.0.1",
+    "cordova-android": "6.3.0",
     "cordova-base64-to-gallery": "^4.1.2",
     "cordova-plugin-camera": "^2.4.1",
+    "cordova-plugin-compat": "^1.2.0",
+    "cordova-plugin-device": "^1.1.4",
+    "cordova-plugin-geolocation": "^3.0.0",
+    "cordova-plugin-googlemaps": "^2.1.1",
+    "cordova-plugin-ionic-webview": "^1.1.16",
+    "cordova-plugin-splashscreen": "^4.0.3",
+    "cordova-plugin-whitelist": "^1.3.1",
     "ionic-angular": "3.8.0",
+    "ionic-plugin-keyboard": "^2.2.1",
     "ionicons": "3.0.0",
     "rxjs": "5.4.3",
     "sw-toolbox": "3.6.0",
@@ -42,7 +53,22 @@
   "cordova": {
     "plugins": {
       "cordova-plugin-camera": {},
-      "cordova-base64-to-gallery": {}
-    }
+      "cordova-base64-to-gallery": {},
+      "ionic-plugin-keyboard": {},
+      "cordova-plugin-whitelist": {},
+      "cordova-plugin-device": {},
+      "cordova-plugin-splashscreen": {},
+      "cordova-plugin-ionic-webview": {},
+      "cordova-plugin-geolocation": {
+        "GEOLOCATION_USAGE_DESCRIPTION": "To locate you"
+      },
+      "cordova-plugin-googlemaps": {
+        "API_KEY_FOR_ANDROID": "YOUR_ANDROID_API_KEY_IS_HERE",
+        "API_KEY_FOR_IOS": "YOUR_IOS_API_KEY_IS_HERE"
+      }
+    },
+    "platforms": [
+      "android"
+    ]
   }
 }

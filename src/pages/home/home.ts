@@ -18,6 +18,7 @@ export class HomePage {
     this.app.nom = "Yo les gens";
     this.base64Image = "";
     this.affImg = "";
+    this.base64ToGallery= null;
   }
 
   inscription(input:any){
@@ -44,7 +45,7 @@ export class HomePage {
   }
   savePicture(){
     if((this.base64Image).length){
-      this.base64Image.base64ToGallery(this.base64Image, { prefix: '_img' });
+    //  this.base64Image.base64ToGallery(this.base64Image, { prefix: '_img' });
     }
   }
 

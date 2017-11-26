@@ -8,6 +8,10 @@ import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
 
+import { GeolocPage } from '../pages/geoloc/geoloc';
+import {GeolocPageModule } from '../pages/geoloc/geoloc.module';
+import { Geolocation } from '@ionic-native/geolocation';
+
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -20,7 +24,8 @@ import { Base64ToGallery } from '@ionic-native/base64-to-gallery';
     AboutPage,
     ContactPage,
     HomePage,
-    TabsPage
+    TabsPage,
+    GeolocPage
   ],
   imports: [
     BrowserModule,
@@ -32,14 +37,16 @@ import { Base64ToGallery } from '@ionic-native/base64-to-gallery';
     AboutPage,
     ContactPage,
     HomePage,
-    TabsPage
+    TabsPage,
+    GeolocPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
     Camera,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    Base64ToGallery
+    Base64ToGallery,
+    Geolocation
   ]
 })
 export class AppModule {}
